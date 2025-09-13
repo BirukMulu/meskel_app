@@ -116,5 +116,8 @@ def home():
             error = "No matching record found. Please check your name and phone."
     return render_template_string(HTML_TEMPLATE, promise=promise, error=error, name=name)
 
+import os
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Use Render's assigned port or 5000 locally
+    app.run(host="0.0.0.0", port=port, debug=True)
