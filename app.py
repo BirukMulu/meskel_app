@@ -4,7 +4,7 @@ from openpyxl import load_workbook
 app = Flask(__name__)
 
 # Path to your Excel file inside your project folder
-file_path = "file_path = "2018 Meskel Promises.xlsx"
+file_path = "2018 Meskel Promises.xlsx"
 
 # Load Excel data into a list of dictionaries
 def load_excel_data():
